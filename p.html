@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liste des etudiants</title>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" href="myStyle.css" th:href="@{/css/myStyle.css}" />
+</head>
+
+<body class="ab">
+   <div class="center">
+   
+   <img src="t.png"  width="2500"  height="200">
+	
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="href="Accueil.html">Accueil</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="Actualités.html">Actualités </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contact.html"> Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contact.html">Accès aux documents administratifs</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+
+
+	<div class="container spacer">
+	<table class ="table  table-striped">
+		<thead class="thead-dark">
+ 			 <tr>
+   				 <th>ID</th>
+    			 <th>Nom</th>
+				 <th>Prenom</th>
+				 <th>Date de naissance</th>
+				 <th>Email</th>
+				 <th>Photo</th>
+ 			 </tr>
+ 		 </thead>
+		</tbody>
+<tr th:each="e:${etudiants}">
+	<td th:text="${e.id}"></td>
+	<td th:text="${e.nom}"></td>
+	<td th:text="${e.prenom}"></td>
+	<td th:text="${e.dateNaissance}"></td>
+	<td th:text="${e.email}"></td>
+	<td th:text="${e.photo}"></td>
+	</tr>
+	</tbody>
+</table>
+</div>
+
+  <p>
+  
+   <footer class="footer">
+       <div class="copyright">
+            <h1>Copyright © 2019.... - Tous droits réservés.</h1>
+        </div>
+   
+  
+  <p>Contact information: <a href="http://www.ensi.rnu.tn/">
+ http://www.ensi.rnu.tn/</a>.
+ <p>
+ <ul class="social-icons">
+    <li><a href="http://www.facebook.com"><img src=g.png/></a></li>
+    <li><a href="http://www.twitter.com"><img src=z.png /></a></li>
+    <li><a href="http://www.youtube.com"><img src=y.png /></a></li>
+	<li><a href="https://drive.google.com/drive/u/0/folders/0B-ljNGR4TfyBU1piVmNfc1VyT2c"><img src=d.jpg /></a></li>
+	</p>
+</ul>
+ </p>
+</footer>
+  </p>
+</div>
+
+
+</body>
+</html>

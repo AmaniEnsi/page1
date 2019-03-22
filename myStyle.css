@@ -1,0 +1,72 @@
+.spacer {
+	margin-top:70px;
+	}
+	 .ab{
+ /* The image used */
+    background-image: url("f.png");
+
+
+
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+nav{position:absolute;
+	top:50px;
+	left:750px;
+	width:1300px;
+	height:50px;
+	
+}
+footer { 
+  display: block;
+  padding:25px 0px;/*Marge verticale*/
+	background-color:#59719A; /*Couleur de fond*/
+	text-align:center;/*texte centré*/
+	margin-top:400px;
+	left:10px;
+	
+	
+
+}
+
+
+
+.container spacer{position:absolute;
+	top:50px;
+	
+	height:500px;
+	
+}
+.copyright{
+    text-align:center;
+    color:#FFF;
+}
+
+
+.social-icons {
+  text-align: center;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+}
